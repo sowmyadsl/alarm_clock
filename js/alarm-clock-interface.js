@@ -10,7 +10,7 @@ $(document).ready(function(){
     var setTime = $('#set-time').val();
     setInterval(function(){
       if( moment().format('hh:mm') == setTime ){
-        $("#output").text("Wake up!!");
+        $("#output").html("<img src='../public/img/wakeup.gif'>");
       } else {
         $("#output").text("");
       }
